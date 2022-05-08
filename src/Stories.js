@@ -16,44 +16,43 @@ export default function Stories() {
     //lógica
     const items = [
         {
-            src: "./img/9gag.svg",
-            nome: "9gag"
+            src: "./img/Milan.png",
+            nome: "acmilan"
         },
         {
-            src: "./img/meowed.svg",
-            nome: "meowed"
+            src: "./img/Caze.jpg",
+            nome: "casimiro"
         },
         {
-            src: "./img/barked.svg",
-            nome: "barked"
+            src: "./img/Messi.jpg",
+            nome: "leomessi"
         },
         {
-            src: "./img/nathanwpylestrangeplanet.svg",
-            nome: "nathanwpylestrangeplanet"
+            src: "./img/Flamengo.jpg",
+            nome: "flamengo"
         },
         {
-            src: "./img/wawawicomics.svg",
-            nome: "wawawicomics"
+            src: "./img/CR7.jpg",
+            nome: "cristiano"
         },
         {
-            src: "./img/respondeai.svg",
-            nome: "respondeai"
+            src: "./img/ViniJr.jpg",
+            nome: "vinijr"
         },
         {
-            src: "./img/filomoderna.svg",
-            nome: "filomoderna"
+            src: "./img/Mbappe.jpg",
+            nome: "k.mbappe"
         },
         {
-            src: "./img/memeriagourmet.svg",
-            nome: "memeriagourmet"
+            src: "./img/Paqueta.jpg",
+            nome: "lucaspaqueta"
         }
     ]
-    const menus = items.map(items => <Story src={items.src} usuario={items.nome}/>);
 
     //UI
     return(
         <div class="stories">
-            {menu}
+            {items.map(items => <Story src={items.src} usuario={items.nome}/>)}
             <div class="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>

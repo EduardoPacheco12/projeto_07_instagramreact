@@ -17,32 +17,31 @@ export default function Sugestoes() {
     //lógica
     const items = [
         {
-            nome: "bad.vibes.memes",
-            src: "./img/bad.vibes.memes.svg", 
+            nome: "desimpedidos",
+            src: "./img/Desimpedidos.jpg", 
             razao: "Segue você"
         },
         {
-            nome: "chibirdart",
-            src: "./img/chibirdart.svg", 
+            nome: "fanaticosporfutebol",
+            src: "./img/Fanaticos.jpg", 
             razao: "Segue você"
         },
         {
-            nome: "razoesparaacreditar",
-            src: "./img/razoesparaacreditar.svg", 
+            nome: "futebolnewsreal",
+            src: "./img/FutebolNews.jpg", 
             razao: "Novo no Instagram"
         },
         {
-            nome: "adorable_animals",
-            src: "./img/adorable_animals.svg", 
+            nome: "futtmais",
+            src: "./img/Futmais.jpg", 
             razao: "Segue você"
         },
         {
-            nome: "smallcutecats",
-            src: "./img/smallcutecats.svg", 
+            nome: "mfutebolisticos",
+            src: "./img/MemesFut.jpg", 
             razao: "Segue você"
         }
     ]
-    const menus = items.map(items => <Sugestao nome={items.nome} src={items.src} razao={items.razao}/>);
    
     //UI
     return(
@@ -51,7 +50,7 @@ export default function Sugestoes() {
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
-            {menus}
+            {items.map(items => <Sugestao nome={items.nome} src={items.src} razao={items.razao}/>)}
         </div>
     );
 }

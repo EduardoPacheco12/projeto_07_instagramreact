@@ -17,7 +17,7 @@ export default function SideBar() {
     //UI
     return(
         <div class="sidebar">
-            <Usuario text="Catana" strong="catanacomics" src="./img/catanacomics.svg"/>
+            <Usuario text="Eduardo Pacheco" strong="edu_pacheco12" src="./img/FotoPerfil.jpg"/>
             <Sugestoes />
             <div class="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma

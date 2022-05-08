@@ -41,28 +41,35 @@ export default function Posts() {
     //lógica
     const items = [
         {
-            img1: "./img/meowed.svg",
-            img2: "./img/gato-telefone.svg",
-            img3: "./img/respondeai.svg",
-            usuario: "meowed",
-            texto: "respondeai",
-            numeros: "101.523"
+            img1: "./img/LuvaDePedreiro.jpg",
+            img2: "./img/LuvaPost.jpg",
+            img3: "./img/Caze.jpg",
+            usuario: "luvadepedreiro",
+            texto: "casimiro",
+            numeros: "3.144.2663"
         },
         {
-            img1: "./img/barked.svg",
-            img2: "./img/gato-telefone.svg",
-            img3: "./img/respondeai.svg",
-            usuario: "barked",
-            texto: "adorable_animals",
-            numeros: "99.159"
+            img1: "./img/Neymar.jpg",
+            img2: "./img/NeymarPost.jpg",
+            img3: "./img/Caze.jpg",
+            usuario: "neymarjr",
+            texto: "casimiro",
+            numeros: "4.164.469"
+        },
+        {
+            img1: "./img/Gabigol.jpg",
+            img2: "./img/GabigolPost.jpg",
+            img3: "./img/Flamengo.jpg",
+            usuario: "gabigol",
+            texto: "flamengo",
+            numeros: "395.163"
         }
     ]
-    const menus = items.map(items => <Post img1={items.img1} usuario={items.usuario } img2="./img/gato-telefone.svg" img3 = {items.img3} texto={items.texto} numeros={items.numeros} />);
 
     //UI
     return(
         <div class="posts">
-            {menu}
+            {items.map(items => <Post img1={items.img1} usuario={items.usuario } img2={items.img2} img3 = {items.img3} texto={items.texto} numeros={items.numeros} />)}
         </div>
     );
 }
