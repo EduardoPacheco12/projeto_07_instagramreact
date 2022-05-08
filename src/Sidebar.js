@@ -4,10 +4,10 @@ function Usuario(props) {
     //UI
     return(
         <div class="usuario">
-            <img src="./img/catanacomics.svg" />
+            <img src= {props.src} />
             <div class="texto">
-                <strong>catanacomics</strong>
-                Catana
+                <strong>{props.strong}</strong>
+                {props.text}
             </div>
         </div>
     );
@@ -17,7 +17,7 @@ export default function SideBar() {
     //UI
     return(
         <div class="sidebar">
-            <Usuario />
+            <Usuario text="Catana" strong="catanacomics" src="./img/catanacomics.svg"/>
             <Sugestoes />
             <div class="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma

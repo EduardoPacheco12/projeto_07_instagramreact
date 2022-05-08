@@ -1,72 +1,59 @@
+function Story(props) {
+    //UI
+    return(
+        <div class="story">
+            <div class="imagem">
+                <img src={props.src} />
+            </div>
+            <div class="usuario">
+                {props.usuario}
+            </div>
+        </div>
+    );
+}
+
 export default function Stories() {
+    //lógica
+    const items = [
+        {
+            src: "./img/9gag.svg",
+            nome: "9gag"
+        },
+        {
+            src: "./img/meowed.svg",
+            nome: "meowed"
+        },
+        {
+            src: "./img/barked.svg",
+            nome: "barked"
+        },
+        {
+            src: "./img/nathanwpylestrangeplanet.svg",
+            nome: "nathanwpylestrangeplanet"
+        },
+        {
+            src: "./img/wawawicomics.svg",
+            nome: "wawawicomics"
+        },
+        {
+            src: "./img/respondeai.svg",
+            nome: "respondeai"
+        },
+        {
+            src: "./img/filomoderna.svg",
+            nome: "filomoderna"
+        },
+        {
+            src: "./img/memeriagourmet.svg",
+            nome: "memeriagourmet"
+        }
+    ]
+    const menus = items.map(items => <Story src={items.src} usuario={items.nome}/>);
+
     //UI
     return(
         <div class="stories">
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/9gag.svg" />
-                </div>
-                <div class="usuario">
-                    9gag
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/meowed.svg" />
-                </div>
-                <div class="usuario">
-                    meowed
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/barked.svg" />
-                </div>
-                <div class="usuario">
-                    barked
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/nathanwpylestrangeplanet.svg" />
-                </div>
-                <div class="usuario">
-                    nathanwpylestrangeplanet
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/wawawicomics.svg" />
-                </div>
-                <div class="usuario">
-                    wawawicomics
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/respondeai.svg" />
-                </div>
-                <div class="usuario">
-                    respondeai
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/filomoderna.svg" />
-                </div>
-                <div class="usuario">
-                    filomoderna
-                </div>
-            </div>
-            <div class="story">
-                <div class="imagem">
-                    <img src="./img/memeriagourmet.svg" />
-                </div>
-                <div class="usuario">
-                    memeriagourmet
-                </div>
-            </div>
-
+            {menu}
             <div class="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
