@@ -13,18 +13,22 @@ function Usuario(props) {
     );
 }
 
+function Descricao(props) {
+    return(
+        <div class={props.class}>
+        {props.texto}
+        </div>
+    );
+}
+
 export default function SideBar() {
     //UI
     return(
         <div class="sidebar">
             <Usuario text="Eduardo Pacheco" strong="edu_pacheco12" src="./img/FotoPerfil.jpg"/>
             <Sugestoes />
-            <div class="links">
-                Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-            </div>
-            <div class="copyright">
-                © 2021 INSTAGRAM DO FACEBOOK
-            </div>
+            <Descricao class="links" texto="Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma"/>
+            <Descricao class="copyright" texto="© 2021 INSTAGRAM DO FACEBOOK"/>
         </div>
     );
 }
