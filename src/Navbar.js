@@ -1,4 +1,7 @@
 export default function NavBar() {
+    //lógica
+    const icones = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"];
+
     //UI
     return(
         <div class="navbar">
@@ -22,10 +25,7 @@ export default function NavBar() {
                 </div>
         
                 <div class="icones">
-                    <ion-icon name="paper-plane-outline"></ion-icon>
-                    <ion-icon name="compass-outline"></ion-icon>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <ion-icon name="person-outline"></ion-icon>
+                    {icones.map(icone => <ion-icon name={icone}></ion-icon>)}
                 </div>
 
                 <div class="icones-mobile">

@@ -5,7 +5,7 @@ import FundoMobile from './FundoMobile';
 export default function App() {
     //UI
     return (
-        <div class="root">
+        <div class="instagram">
             <NavBar />
             <Corpo  />
             <FundoMobile />
